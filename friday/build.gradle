@@ -1,0 +1,22 @@
+apply plugin: 'application'
+apply plugin: "org.xtext.xtend"
+
+mainClassName = "friday.Friday"
+
+dependencies {
+  //compile name: 'gson-2.2.4'
+  compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.9.2'
+}
+
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+
+  dependencies {
+    classpath "org.xtext:xtext-gradle-plugin:1.0.5"
+  }
+}
